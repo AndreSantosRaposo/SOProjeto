@@ -15,7 +15,7 @@ ${PROG}: ${OBJS}
 .c.o:
 	${CC} ${FLAGS} -c $< -o $@
 
-main.o: main.c includes.h
+main.o: main.c includes.h estruturas.h
 validador.o: validator.c includes.h
 miner.o: miner.c includes.h 
 statistics.o: statistics.c

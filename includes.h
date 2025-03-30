@@ -12,3 +12,9 @@
 #include <sys/ipc.h>
 #include <sys/sem.h>
 #include <sys/shm.h>
+//Sinais
+#include <signal.h>
+
+//Debug
+//#define DEBUG
+

@@ -14,16 +14,20 @@ typedef struct transaction{
     time_t timestamp;
 } Transaction;
 
+//POW TBD~
 
+
+//Criar as estruturas aqui
+//num_miners, transacton pool slots, tansactions_per_block,blockchain_blocks
 typedef struct transaction_pool{
     int current_block_id;
-    Transaction transaction_pool[1000]; //mas não sei qual vai ser o tamanho da pool before run
+    Transaction *transaction_pool; //numero de slots do config file
+    int empty; //se a posição está disponivel ou não
+    int age;
 }Transaction_pool;
-
-//POW TBD
 
 //BLOCKCHAIN LEDGER
 typedef struct blockchain_ledger
 {
-    Block blocks[1000]; //tamanho temporário
+    Block *blocks; //tamanho blockchain_blocks
 }Blockchain_ledger;
